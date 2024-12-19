@@ -310,6 +310,10 @@ footer{
     font-size: 0.85rem;
     margin-top: 10px;
     color: #dddddd;
+    border: none;
+    /* border-bottom: 1px solid white; */
+    outline: none;
+    cursor: pointer;
 }
 .footer-middle-content ul h2{
     color: #fff;
@@ -343,6 +347,16 @@ footer{
 .footer-bottom .pages{
     padding-top: 10px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-bottom .pages a{
+    border: none;
+    /* border-bottom: 1px solid white; */
+    outline: none;
+    cursor: pointer;
 }
 .footer-bottom .copyright{
     padding-top: 5px;

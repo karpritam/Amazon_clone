@@ -3,13 +3,16 @@ const prev_btn = document.querySelector(".control-prev1");
 const next_btn = document.querySelector(".control-next1");
 const searchTap=document.querySelector(".nav-search");
 
+let isClicked=false;
 searchTap.addEventListener("click",()=>{
-	searchTap.style.border = "3.5px solid orange";
-
-    // Optionally remove the border after a delay
-    setTimeout(() => {
-        searchTap.style.border = ""; // Reset the border after 3 second
-    }, 3000);
+	if(isClicked==false){
+		isClicked=true;
+		searchTap.style.border = "3.5px solid orange";
+	}else{
+		isClicked=false;
+		searchTap.style.border = "";
+	}
+	// console.log(isClicked);
 	
 })
 
