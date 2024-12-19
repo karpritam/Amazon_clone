@@ -1,6 +1,17 @@
 const imgs = document.querySelectorAll(".header-slider ul img");
 const prev_btn = document.querySelector(".control-prev1");
 const next_btn = document.querySelector(".control-next1");
+const searchTap=document.querySelector(".nav-search");
+
+searchTap.addEventListener("click",()=>{
+	searchTap.style.border = "3.5px solid orange";
+
+    // Optionally remove the border after a delay
+    setTimeout(() => {
+        searchTap.style.border = ""; // Reset the border after 3 second
+    }, 3000);
+	
+})
 
 let n = 0;
 
