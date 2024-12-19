@@ -29,6 +29,11 @@ next_btn.addEventListener("click", (e) => {
 	changeSlide();
 });
 
+// const peoduct_imgs2=document.querySelectorAll(".product-slider .products img")
+// const prev_btn2=document.querySelector(".control-prev2");
+// const next_btn2=document.querySelector(".control-next2");
+
+
 
 const scrollContainer=document.querySelectorAll('.products');
 for(const item of scrollContainer){
