@@ -6,12 +6,20 @@
     <title>Cart</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./cart.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+			integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <a href="./index.html">
-            <img src="./images/amazon_logo.png" width="100" />
-        </a>
+    <div class="nav">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/amazon_logo.png" width="100" />
+            </a>
+        </div>
         <div class="nav-country">
             <img src="./images/location_icon.png" height="20px" />
             <div>
@@ -23,6 +31,13 @@
             <div class="nav-search-catagory">
                 <p>All</p>
                 <img src="./images/dropdown_icon.png" height="10px" />
+                <!-- <select class="nav-search-catagory-option">
+                    <option value="1">All</option>
+                    <option value="2">All Catagories</option>
+                    <option value="3">Amazon Device</option>
+                    <option value="4">Alexa Skills</option>
+                    <option value="4">Amazon Fashion</option>
+                </select> -->
             </div>
             <input
                 type="text"
@@ -52,7 +67,7 @@
             <img src="./images/cart_icon.png" width="35px" />
             <h4>Cart</h4>
         </a>
-    </nav>
+    </div>
     <div class="nav-bottom">
         <div>
             <p class="nav-menu">
@@ -170,7 +185,7 @@
     </div>
     <footer>
         <div class="footer-top">
-            <a href="./index.html"><p>Back to Top</p></a>
+            <a href="./cart.html"><p>Back to Top</p></a>
         </div>
         <div class="footer-middle">
             <div class="footer-middle-content">
@@ -220,7 +235,15 @@
             </div>
         </div>
         <div class="footer-middle-bottom">
-            <img src="./images/amazon_logo.png" width="100">
+            <a href="./index.html"><img src="./images/amazon_logo.png" width="80"></a>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <p>English</p>
+            </div>
+            <div>
+                <img src="./images/indian-flag.png " width="20px">
+                <p>India</p>
+            </div>
         </div>
         <div class="footer-bottom">
             <div class="pages">
@@ -234,4 +257,5 @@
         </div>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>
