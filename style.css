@@ -434,6 +434,27 @@ footer {
 .footer-bottom .copyright {
 	padding-top: 5px;
 }
+
+.nav-bottom .fa-xmark{
+	display: none;
+}
+.sidemenu{
+	/* background-color: rgba(0, 0, 0, .8);
+	position: absolute;
+    will-change: opacity;
+    height: 100%;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent; */
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    z-index: 100000;
+	display: block;
+}
+
 /* -------- media query ------- */
 @media only screen and (max-width: 900px) {
 	.nav {
@@ -560,5 +581,9 @@ footer {
 	.footer-bottom .copyright p {
 		font-size: 0.7rem;
 		text-align: center;
+	}
+	.nav-bottom .fa-xmark{
+		display: block;
+		font-size: 25px;
 	}
 }
